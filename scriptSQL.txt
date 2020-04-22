@@ -1,0 +1,11 @@
+create database bd_personasDaniela;
+
+CREATE TABLE personasDaniela (
+	id INT NOT NULL AUTO_INCREMENT,
+	cedula INT(10) NULL,
+	fecha_nacimiento DATE NULL,
+	PRIMARY KEY (id)
+);
+
+
+INSERT INTO personasdaniela (cedula, fecha_nacimiento) VALUES (1110593990, "1998-10-24");
