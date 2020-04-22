@@ -11,14 +11,14 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "http://localhost:8080/products/",
+					"raw": "http://localhost:8088/personas/",
 					"protocol": "http",
 					"host": [
 						"localhost"
 					],
-					"port": "8080",
+					"port": "8088",
 					"path": [
-						"products",
+						"personas",
 						""
 					]
 				}
@@ -31,7 +31,16 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": ""
+					"raw": "http://localhost:8088/personas/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8088",
+					"path": [
+						"personas",
+						"1"
+					]
 				}
 			},
 			"response": []
@@ -43,7 +52,7 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\n    \"category\": \"andres\",\n    \"description\": \"Delicioso postre para la tarde\",\n    \"identification\": \"B01\",\n    \"initdate\": \"11-06-2019\",\n    \"productname\": \"Postre Brazo de Reina\",\n    \"value\": 3700\n}",
+					"raw": "{\n    \"cedula\": 1110593990,\n    \"nombre\": \"Daniela Rodriguez\",\n    \"fecha_nacimiento\": \"1998-08-22\"\n}",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -51,14 +60,14 @@
 					}
 				},
 				"url": {
-					"raw": "http://localhost:8080/products/",
+					"raw": "http://localhost:8088/personas/",
 					"protocol": "http",
 					"host": [
 						"localhost"
 					],
-					"port": "8080",
+					"port": "8088",
 					"path": [
-						"products",
+						"personas",
 						""
 					]
 				}
@@ -72,7 +81,7 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\n    \"category\": \"andres\",\n    \"description\": \"Delicioso postre para la tarde\",\n    \"identification\": \"B01\",\n    \"initdate\": \"11-06-2019\",\n    \"productname\": \"Postre Brazo de Reina\",\n    \"value\": 3700\n}",
+					"raw": "{\n    \"cedula\": 1005839016,\n    \"nombre\": \"Angie C Rodriguez\",\n    \"fecha_nacimiento\": \"2000-08-22\"\n}",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -80,15 +89,15 @@
 					}
 				},
 				"url": {
-					"raw": "http://localhost:8080/products/{id}",
+					"raw": "http://localhost:8088/personas/1",
 					"protocol": "http",
 					"host": [
 						"localhost"
 					],
-					"port": "8080",
+					"port": "8088",
 					"path": [
-						"products",
-						"{id}"
+						"personas",
+						"1"
 					]
 				}
 			},
@@ -100,15 +109,15 @@
 				"method": "DELETE",
 				"header": [],
 				"url": {
-					"raw": "http://localhost:8080/products/{id}",
+					"raw": "http://localhost:8088/personas/2",
 					"protocol": "http",
 					"host": [
 						"localhost"
 					],
-					"port": "8080",
+					"port": "8088",
 					"path": [
-						"products",
-						"{id}"
+						"personas",
+						"2"
 					]
 				}
 			},
